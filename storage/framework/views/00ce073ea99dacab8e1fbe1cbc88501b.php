@@ -1,0 +1,4 @@
+<?php if(session('success')): ?><div class="alert ok"><?php echo e(session('success')); ?></div><?php endif; ?>
+<?php if(session('info')): ?><div class="alert info"><?php echo e(session('info')); ?></div><?php endif; ?>
+<?php if($errors->any()): ?><div class="alert no"><?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $e): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?><div><?php echo e($e); ?></div><?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?></div><?php endif; ?>
+<?php /**PATH D:\lara\la-saas\resources\views/vendor/sazeh/partials/flash.blade.php ENDPATH**/ ?>

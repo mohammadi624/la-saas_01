@@ -1,0 +1,39 @@
+{
+    "name": "sazeh/platform-settings",
+    "description": "Comprehensive SaaS Platform Configuration, Registration Policies, Billing Calculator, RBAC & Audit Log Package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0-dev",
+    "keywords": [
+        "laravel",
+        "saas",
+        "settings",
+        "registration-policy",
+        "billing",
+        "rbac",
+        "audit-log"
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0 || ^12.0",
+        "illuminate/database": "^11.0 || ^12.0",
+        "illuminate/cache": "^11.0 || ^12.0",
+        "illuminate/http": "^11.0 || ^12.0",
+        "illuminate/validation": "^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saas\\PlatformConfig\\": "src/",
+            "Saas\\PlatformConfig\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Saas\\PlatformConfig\\PlatformConfigServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
